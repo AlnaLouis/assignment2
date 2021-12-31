@@ -1,3 +1,4 @@
+const port = process.env.PORT || 3000
 //const { name } = require('ejs');
 const express = require('express');
 const nav = [
@@ -92,4 +93,4 @@ app.get('/addbook',function(req,res){
    });
 });*/
 
-app.listen(3333);
+app.listen(3000);
