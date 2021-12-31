@@ -1,3 +1,4 @@
+const http = require('http');
 const port = process.env.PORT || 3000
 //const { name } = require('ejs');
 const express = require('express');
@@ -92,5 +93,6 @@ app.get('/addbook',function(req,res){
       books
    });
 });*/
-
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;});
 app.listen(3000);
